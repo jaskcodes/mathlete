@@ -9,14 +9,14 @@ A simple Python package that uses the OpenAI API to implement an AI-powered math
 - Update your Open AI key in the `app.py` file
 
 Before running the application, please make sure to install all necessary packages using the following command: \
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 ## Usage
 
 1. Interactive mode:
-python src/app.py interactive
+`python src/app.py interactive`
 
 2. Evaluation mode:
-python src/app.py evaluate
+`python src/app.py evaluate`
 
 The evaluate mode will use the `questions.txt` file to evaluate the AI. Ensure that the `questions.txt` file is formatted correctly, with each line containing a dictionary with 'question' and 'answer' keys.
