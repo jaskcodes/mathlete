@@ -8,7 +8,7 @@ A simple Python package that uses the OpenAI API to implement an AI-powered math
 - OpenAI Python client `openai`
 - Update your Open AI key in the `app.py` file
 
-Before running the application, please make sure to install all necessary packages using the following command:
+Before running the application, please make sure to install all necessary packages using the following command: \\
 pip install -r requirements.txt
 
 ## Usage
