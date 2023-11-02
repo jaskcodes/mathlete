@@ -18,5 +18,3 @@ Before running the application, please make sure to install all necessary packag
 
 2. Evaluation mode:
 `python src/app.py evaluate`
-
-The evaluate mode will use the `questions.txt` file to evaluate the AI. Ensure that the `questions.txt` file is formatted correctly, with each line containing a dictionary with 'question' and 'answer' keys.
