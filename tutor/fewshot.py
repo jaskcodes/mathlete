@@ -250,23 +250,6 @@ Do you want to try another problem or is there something else you'd like to lear
 que4 = "Liam has twice as many apples as Noah. Together, they have 18 apples. How many apples does each person have?"
 ans4 = "Liam = 8, Noah = 4"
 
-conversation_list = [conv1, conv2, conv3, conv4]
-question_list = [que1, que2, que3, que4]
-answer_list = [ans1, ans2, ans3, ans4]
-
-def create_few_shot_examples(conversation_list=conversation_list, question_list=question_list, answer_list=answer_list):
-    few_shot_examples_khanamigo = []
-    
-    for conv, que, ans in zip(conversation_list, question_list, answer_list):
-        example = {
-            "question": f"{conv}",
-            "answer": f"Question: {que} \n Answer: {ans}"
-        }
-        few_shot_examples_khanamigo.append(example)
-    
-    return few_shot_examples_khanamigo
-
-
 system_message_khanamigo = """You are a helpful AI information extractor that extracts the conversation, specifically the question and answer from the conversation between an elementary school student and a tutor.\
 Think step by step
 
@@ -283,3 +266,10 @@ Some examples of answers corresponding to elementary math questions are:
 {few_shot_examples}
 
 Question: {input}"""
+
+few_shot_examples_khanamigo = [{"question": f"{conv1}", "answer": f"Question:{que1} \n Answer:{ans1}"},
+                     {"question": f"{conv2}", "answer": f"Question: {que2} \n Answer: {ans2}"},
+                     {"question": f"{conv3}", "answer": f"Question: {que3} \n Answer: {ans3}"},
+                      {"question": f"{conv4}", "answer": f"Question: {que4} \n Answer: {ans4}"}
+                               ]
+
