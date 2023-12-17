@@ -1,6 +1,6 @@
 # Mathlete: AI Math Tutor
 
-A simple Python package that uses the OpenAI API to implement an AI-powered math tutor answering elementary level math questions. You can choose to either run an interactive tutoring session or evaluate the AI based on a pre-set list of questions.
+A Python package that uses the OpenAI API to implement an AI-powered math tutor answering elementary level math questions. You can choose to either run an interactive tutoring session or evaluate the AI based on a pre-set list of questions.
 
 ## Prerequisites
 
